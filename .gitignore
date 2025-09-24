@@ -13,6 +13,11 @@ default-env.json
 .classpath
 .project
 .settings
+dist/
+mta_archives/
+gen/
+resources/
+.javaApp_mta_build_tmp
 
 **/node/
 **/node_modules/

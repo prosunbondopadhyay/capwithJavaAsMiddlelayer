@@ -33,17 +33,13 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: javaApp-db
-
-
   - name: javaApp-db-deployer
     type: hdb
-    path: gen/db
+    path: db                        # root of the db module
     parameters:
       buildpack: nodejs_buildpack
-    build-parameters:
-      builder: custom
-      commands:
-        - npm run build
+    build-parameters:           
+      build-result: src/gen
     requires:
       - name: javaApp-db
 
