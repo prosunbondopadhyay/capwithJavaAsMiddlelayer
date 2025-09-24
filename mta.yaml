@@ -37,7 +37,7 @@ modules:
       - name: javaApp-db
   - name: javaApp-db-deployer
     type: hdb
-    path: db/src/gen                        # root of the db module
+    path: db                        # root of the db module
     parameters:
       buildpack: nodejs_buildpack
       disk-quota: 256M
