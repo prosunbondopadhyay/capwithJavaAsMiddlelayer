@@ -14,7 +14,7 @@ build-parameters:
 modules:
   - name: javaApp-srv
     type: java
-    path: gen/srv
+    path: srv
     parameters:
       instances: 1
       buildpack: sap_java_buildpack_jakarta
@@ -37,7 +37,7 @@ modules:
       - name: javaApp-db
   - name: javaApp-db-deployer
     type: hdb
-    path: gen/db                        # root of the db module
+    path: db/src/gen                        # root of the db module
     parameters:
       buildpack: nodejs_buildpack
       disk-quota: 256M
