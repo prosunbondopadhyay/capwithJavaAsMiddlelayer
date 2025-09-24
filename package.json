@@ -15,7 +15,7 @@
   },
   "scripts": {
     "undeploy": "cf undeploy workzone --delete-services --delete-service-keys --delete-service-brokers",
-    "build": "rimraf resources mta_archives && mbt build --mtar javaApp_1.0.0",
+    "build": "rimraf resources mta_archives && mbt build --mtar javaApp_1.0.0-SNAPSHOT.mtar",
     "deploy": "cf deploy mta_archives/javaApp_1.0.0-SNAPSHOT.mtar --retries 1"
   },
   "sapux": [

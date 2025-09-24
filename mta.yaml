@@ -35,6 +35,7 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: javaApp-db
+      - name: javaApp-auth 
   - name: javaApp-db-deployer
     type: hdb
     path: db                        # root of the db module
