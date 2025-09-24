@@ -152,7 +152,6 @@ resources:
     parameters:
       config:
         tenant-mode: dedicated
-        xsappname: javaApp-${org}-${space}
-      path: ./xs-security.json
+        xsappname: javaApp-${org}-${space}      
       service: xsuaa
       service-plan: application    
